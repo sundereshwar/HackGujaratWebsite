@@ -766,6 +766,9 @@ section {
   padding: 10px 0;
   text-align: center;
 }
+.clients h2{
+padding: 0px 20px 0px 20px;
+}
 .img-fluid{
   max-width: 100%;
   height: auto;
