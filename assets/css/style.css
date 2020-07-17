@@ -117,7 +117,7 @@ body {
 {
   background: url(../img/bg1234.jpg) top center;
   background-size: cover;
-  width: 100%;
+  width: 70%;
   /* background-color: #f17c1c; */
   color: white; 
   border-radius:10px ;
@@ -574,28 +574,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: right-left 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+ #f1{
+   display: block;
+   width: 100%;
+ }
+ #f2{
+   display: block;
+ }
+ #f3{
+   display: none;
+ }
+ 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   #hero {
     height: 100vh;
   }
   #hero .animated {
-    -webkit-animation: none;
-    animation: none;
+    -webkit-animation:  up-down 2s ease-in-out infinite alternate-reverse both;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
   #hero .hero-img {
     text-align: center;
   }
   #hero .hero-img img {
-    width: 50%;
+    width: 90%;
+  }
+  #f1{
+    display:none;
+  }
+  #f2{
+    display: none;
+  }
+  #f3{
+    display: block;
+    width: 90%;
   }
 }
 
@@ -613,13 +634,23 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
   #hero .hero-img img {
-    width: 70%;
+    width: 90%;
+  }
+  #f1{
+    display:none;
+  }
+  #f2{
+    display: none;
+  }
+  #f3{
+    display: block;
+    width: 90%;
   }
 }
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -634,10 +665,27 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes right-left {
+  0% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes right-left {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }
 
@@ -757,17 +805,17 @@ section {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .clients img {
-    /* width: 40%; */
+    width: 40%;
   }
 }
 
 @media (max-width: 575px) {
   .clients img {
-    /* width: 30%; */
+    width: 30%;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # About Us
@@ -786,6 +834,9 @@ section {
   padding: 0;
 }
 
+.about .content b{
+  font-size: 1.3em;
+}
 .about .content ul li {
   padding-left: 28px;
   position: relative;
@@ -1471,6 +1522,11 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+#pricing{
+  background: url(../img/bg321.jpg) top center;
+  background-size: contain;
+  background-attachment: fixed;
+}
 .pricing .box {
   padding: 20px;
   background: #f9f9f9;
@@ -1609,10 +1665,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-$contact{
-  background: url(../img/bg1234.jpg) top center;
-  background-size: cover;
-}
+
 .contact .contact-about h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
@@ -1822,6 +1875,11 @@ $contact{
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+#portfolio{
+  background: url(../img/bg321.jpg) top center;
+  background-size: contain;
+  background-attachment: fixed;
+}
 .portfolio-details {
   padding-top: 20px;
 }
