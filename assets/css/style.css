@@ -28,7 +28,7 @@ body {
   -webkit-box-align: center;
   align-items: center;
   background-color: #f17c1c;
-  
+  outline: none;
   border: none;
   color: #FFFFFF;
   cursor: pointer;
