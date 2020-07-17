@@ -102,7 +102,7 @@
            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
       
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">About the event</a>
+            <a href="#about" class="btn-get-started scrollto">About the event</a><span><button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button></span>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" style="border-radius: 5px;" data-aos="fade-left" data-aos-delay="200">
@@ -114,6 +114,28 @@
     </div>
 
 <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    let devfolioOptions = {
+        buttonSelector: '#devfolio-apply-now',
+        key: 'hackgujarat',
+    }
+
+    let script = document.createElement('script');
+    script.src = "https://apply.devfolio.co";
+    document.head.append(script);
+
+    script.onload = function () {
+        new Devfolio(devfolioOptions);
+    }
+
+    script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+    }
+});
+
 // Set the date we're counting down to
 var countDownDate = new Date("Sep 5, 2020 15:37:25").getTime();
 
@@ -850,13 +872,29 @@ var x = setInterval(function() {
             <div class="text-center sponsor-head-title container" >
               <h2>Title Sponsors</h2>
             </div>
-              <!-- <div class="supporter-logo"></div> -->
-              <center>
+               <!-- sponsors start -->
+          <div class="container">
+          <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+            <div class="col-lg-6 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="assets/img/clients/github-logo-1.png" class="img-fluid" alt="">
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="assets/img/clients/spaces_-LX2wpUXI1eWMY46nkHR_avatar-rectangle.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+              <!-- <center>
                 <img src="assets/img/clients/github-logo-1.png"  class="img-fluid" alt="">
               </center>
               <center>
                 <img src="assets/img/clients/spaces_-LX2wpUXI1eWMY46nkHR_avatar-rectangle.png"  class="img-fluid" alt="">
-              </center>
+              </center> -->
 
           <div class="text-center sponsor-head-title container">
             <h2>Gold Sponsors</h2>
@@ -890,7 +928,7 @@ var x = setInterval(function() {
 
             <div class="col-lg-3 col-md-4 col-xs-6">
               <div class="supporter-logo">
-                <img src="assets/img/clients/6.png" class="img-fluid" alt="">
+                <img src="assets/img/clients/fold.png" class="img-fluid" alt="">
               </div>
             </div>
 
@@ -914,13 +952,25 @@ var x = setInterval(function() {
 
             <div class="col-lg-3 col-md-4 col-xs-6">
               <div class="supporter-logo">
-                <img src="assets/img/clients/x_icon_4x.png" class="img-fluid" alt="">
+                <img src="assets/img/clients/matic.png" class="img-fluid" alt="">
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6">
               <div class="supporter-logo">
                 <img src="assets/img/clients/9.svg" class="img-fluid" alt="">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="assets/img/clients/x_icon_4x.png" class="img-fluid" alt="">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="assets/img/clients/6.png" class="img-fluid" alt="">
               </div>
             </div>
 
@@ -934,10 +984,11 @@ var x = setInterval(function() {
             <h2>Community Partner</h2>
           </div>
             <!-- <div class="supporter-logo"></div> -->
+            <div style="height: 70%;" align="center">
             <center>
-              <img src="assets/img/clients/headstart logo-01.png"  class="img-fluid" alt="">
+              <img src="assets/img/clients/headstart logo.png"  class="img-fluid" alt="">
             </center>
-
+          </div>
             <div class="">
           <div class="text-center sponsor-head-title container" >
             <h2>Gifting Partner</h2>
