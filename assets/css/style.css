@@ -1992,6 +1992,7 @@ padding: 0px 20px 0px 20px;
   /* background: #010208; */
   background: url(../img/bg32.jpg) top center; 
   background-size: cover;
+  background-attachment: fixed;
   padding: 60px 0 30px 0;
 }
 
