@@ -13,6 +13,123 @@ body {
   color: #444444;
 }
 /* edited classes*/
+.preload{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  z-index: 99997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.preload-finish{
+  opacity: 0;
+  pointer-events: none;
+}
+.airplane{
+  width: 20%;
+  animation: airplane 1s ease infinite alternate;
+}
+.c1,.c2,.c3,.c4,.c5{
+  position: absolute;
+  right: 0%;
+}
+.c1{
+  top: 27%;
+  transform: translateX(100%);
+  animation: cloud 3s ease infinite;
+}
+.c2{
+  top: 45%;
+  transform: translateX(100%);
+  animation: cloud 3s ease infinite 1.5s;
+}
+.c3{
+  top: 35%;
+  transform: translateX(100%);
+  animation: cloud 3s ease infinite 2s;
+}
+.c4{
+  top: 60%;
+  transform: translateX(100%);
+  animation: cloud 3s ease infinite 0.7s;
+}
+.c5{
+  top: 70%;
+  transform: translateX(100%);
+  animation: cloud 3s ease infinite 4s;
+}
+.preload h3{
+  color: #f17c1c;
+  position: absolute;
+  margin: 10px;
+  top: 10%;
+
+}
+
+@keyframes airplane{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(20px);
+  }
+}
+@keyframes cloud{
+  from{
+    right: 0%;
+  }
+  to{
+   right: 130%;
+  }
+}
+
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f17c1c;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99998;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 #devfolio-apply-now {
   font-family: "Raleway", sans-serif;
   
@@ -257,8 +374,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #57aae1;
-  color: #fff;
+  background: #fff;
+  color: #f17c1c;
 }
 
 /*--------------------------------------------------------------
@@ -1822,15 +1939,18 @@ padding: 0px 20px 0px 20px;
 
 .contact .php-email-form button[type="submit"] {
   background: #f17c1c;
-  border: 0;
+  border: 1px solid #f17c1c;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  outline: none;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #2383c4;
+  background: #fff;
+  color: #f17c1c;
+  border:1px solid #f17c1c;
 }
 
 @-webkit-keyframes animate-loading {

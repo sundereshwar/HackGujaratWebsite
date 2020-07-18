@@ -44,8 +44,39 @@
   ======================================================== -->
 </head>
 
-<body>
-
+<body onload="myFunction()">
+  <!-- Loader -->
+  <!-- <div id="lw" class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div> -->
+  <!-- <script>
+    $(window).on("load",function(){
+      $(".preload").fadeOut("slow");
+    });
+</script> -->
+  <div id="preload" class="preload">
+      <img class="airplane" src="assets/img/plane.png" alt="plane">
+      <h3 style="font-family: Arial, Helvetica, sans-serif;">Taking you to HackGujarat...</h3>
+      <img class="c1" src="assets/img/c1.png" alt="">
+      <img class="c2" src="assets/img/c2.png" alt="">
+      <img class="c3" src="assets/img/c3.png" alt="">
+      <img class="c4" src="assets/img/c4.png" alt="">
+      <img class="c5" src="assets/img/c5.png" alt="">
+  </div>
+  <!-- <script>
+    window.addEventListner('load',function(){
+      const preload=document.querySelector('.preload');
+      preload.classList.add('preload-finish');
+    });
+  </script> -->
+  <script>
+    function myFunction()
+{
+   // alert("working...");
+    document.getElementById("preload").style.display = "none";
+}
+</script>
+ 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
@@ -89,7 +120,7 @@
 
     </div>
   </header><!-- End Header -->
-
+ 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" >
 
@@ -136,34 +167,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 5, 2020 15:37:25").getTime();
+// // Set the date we're counting down to
+// var countDownDate = new Date("Sep 5, 2020 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+// // Update the count down every 1 second
+// var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+//   // Get today's date and time
+//   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+//   // Find the distance between now and the count down date
+//   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+//   // Display the result in the element with id="demo"
+//   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+//   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+//   // If the count down is finished, write some text
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("demo").innerHTML = "EXPIRED";
+//   }
+// }, 1000);
 </script>
   </section><!-- End Hero -->
 
