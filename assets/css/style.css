@@ -12,6 +12,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+
+*{
+  border:0px solid red;
+}
 /* edited classes*/
 .preload{
   position: absolute;
@@ -166,9 +170,6 @@ body {
 
 
 
-*{
-  border:0px solid red;
-}
 .apply-btn {
   
   
@@ -270,11 +271,26 @@ body {
 {
   background: url(../img/bg1234.jpg) top center;
   background-size: cover;
-  max-width: 90%;
+  margin-top: 20px;
   /* background-color: #f17c1c; */
   color: white; 
   border-radius:10px ;
   padding: 10px 0px 5px 0px;
+  
+}
+.sponsor-head-title-1
+{
+  background: url(../img/bg1234.jpg) top center;
+  background-size: cover;
+  max-width: 90%;
+  margin:auto;
+  margin-top: 20px;
+  /* background-color: #f17c1c; */
+  color: white; 
+  border-radius:10px ;
+  padding: 10px 0px 5px 0px;
+ 
+  
 }
 .orange{
   color: #f17c1c;
