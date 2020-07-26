@@ -1709,6 +1709,9 @@ padding: 0px 20px 0px 20px;
   overflow: hidden;
   border: 2px solid #f9f9f9;
 }
+.pricing h2{
+  font-size: 25px;
+}
 
 .pricing .box h3 {
   font-weight: 400;
