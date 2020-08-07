@@ -17,6 +17,22 @@ body {
   border:0px solid red;
 }
 /* edited classes*/
+.iframe-container {
+  overflow: hidden;
+  
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
 .preload{
   position: absolute;
   top: 0;
@@ -1538,6 +1554,148 @@ padding: 0px 20px 0px 20px;
 # Team
 --------------------------------------------------------------*/
 
+/*new*/
+.teamsection{
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.teamsection .card{
+  position: relative;
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+ border: none;
+ background-color: #f7fbfe;
+ overflow: visible !important;
+ /* transform-style: preserve-3d;
+ -webkit-transform-style: preserve-3d; */
+}
+.teamsection .card .face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; */
+  box-shadow: 1px 2px 9px 0 rgba(68, 88, 144, 0.12);
+  backface-visibility: hidden;
+  transition: 0.6s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 10px;
+}
+.teamsection .card .face.front{
+  background: url(bg.jpg);
+  background-size: cover;
+  z-index: 3;
+}
+.teamsection .card:hover .face.front{
+  transform: perspective(500px) rotateY(180deg);
+  z-index: 0;
+}
+.teamsection .card .face.back{
+  /* background: linear-gradient(to bottom left,  #ffe259, #f17c1c); */
+  background: url(../img/bg32.jpg);
+  background-size: cover;
+  
+  color: #fff;
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 0;
+}
+.teamsection .card:hover .face.back{
+  transform: perspective(1000px) rotateY(360deg);
+}
+.teamsection .card .face.front h2{
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  font-size: 20px;
+  margin:5px;
+  padding: 10px 0px;
+  color: rgb(12, 12, 12);
+  text-transform: uppercase;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: perspective(1000px) translateY(262px) translateZ(50px) ;
+  background: url(../img/bg32.jpg);
+  background-size: cover;
+}
+.teamsection .card .face.back h2{
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  transform: perspective(1000px) translateY(180px) translateX(14%) translateZ(50px) ;
+}
+.teamsection .card .face.back .overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  transform: translateY(-10px);
+  border-radius: 10px;
+}
+.teamsection .card .face.back p{
+  /* font-weight: bold; */
+  font-size: 18px;
+  margin: 10px;
+  padding-top: 200px;
+  color: #ffffff;
+  transform: perspective(1000px) translateZ(50px) ;
+}
+
+.teamsection .sm{
+  margin: 18px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  transform: perspective(1000px) translateZ(50px) ;
+}
+.teamsection .sm a{
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+ text-decoration: none;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.teamsection .sm a:hover{
+  background: #ffffff;
+  color: #f17c1c;
+  }
+
+.teamsection .modalbtn{
+  background: #f17c1c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  outline: none;
+  font-weight: bold;
+  /* margin-top: 50px; */
+  transition: 0.4s all ease;
+  border: 2px solid #f17c1c;
+}
+.teamsection .modalbtn:hover{
+  background: white;
+  color: #f17c1c;
+  border: 2px solid #f17c1c;
+}
+.modal-dialog a:hover{
+  color: red;
+}
+.modal-dialog{
+  max-width: 90%;
+  margin: 4.5rem auto;
+}
+@media only screen and (min-width:890px){
+.modal-dialog
+{
+  max-width: 70%;
+}
+}
 .team .icon-box {
   /* width: 20%; */
   margin: auto;
