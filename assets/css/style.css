@@ -1549,7 +1549,115 @@ padding: 0px 20px 0px 20px;
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+/*--------------------------------------------------------------
+# prizes
+--------------------------------------------------------------*/
 
+.giftcard {
+  margin: 20px;
+  width: 330px;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background: url(bg32.jpg);
+  background-size: cover;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+  cursor: default;
+  }
+  /* .giftcard .main-content {
+  width: 100%;
+  height: 100%;
+  }
+  .giftcard .main-content img {
+  width: 100%;
+  height: 100%;
+  } */
+  .giftcard .overlay-content{
+  width: 100%;
+  height: 80%;
+  /* background-color: #ffeac9; */
+  background: url(../img/bg32.jpg);
+  background-size: cover;
+  box-shadow: 1px -2px 10px rgba(0,0,0,0);
+  color: #080808;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  
+  transition: transform 0.4s, box-shadow 0.6s;
+  top: 100%;
+  left: 0%;
+  opacity: 1;
+  }
+ 
+  .giftcard .upper-content{
+  width: 100%;
+  height: 100%;
+  
+  /* background-color: #ffeac9; */
+  background: url(../img/bg22.jpg);
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: 0.4s;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
+  }
+  .giftcard .upper-content h1{
+    margin: 3px;
+    font-size: 27px;
+      transition: 0.8s;
+  }
+  .giftcard:hover .overlay-content {
+  /* left: 0; */
+  transform: translateY(-90%);
+  box-shadow: 1px -2px 10px rgba(0,0,0,0.5);
+  }
+  .giftcard:hover .upper-content {
+  /* left: 0; */
+  transform: translateY(-40%);
+  }
+  .giftcard:hover .upper-content h1{
+      transform: translateY(40%);
+  }
+  .giftcard .overlay-content p {
+  text-align: center;
+  font-size: 15px;
+  margin: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.75rem;
+  }
+  .giftcard .overlay-content p span {
+  display: block;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1.25rem;
+  }
+
+  @media (max-width: 1024px) {
+  .giftcard {
+      width: 250px;
+      height: 310px;
+  }
+  .giftcard .upper-content h1{
+    font-size: 23px;
+  }
+  .giftcard .overlay-content p{
+    font-size: 13px;
+  }
+  }
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1564,6 +1672,7 @@ padding: 0px 20px 0px 20px;
   
 }
 .teamsection .card{
+ 
   position: relative;
   width: 250px;
   height: 350px;
@@ -1574,6 +1683,20 @@ padding: 0px 20px 0px 20px;
  /* transform-style: preserve-3d;
  -webkit-transform-style: preserve-3d; */
 }
+@media (min-width: 1024px) {
+  .teamsection .card {
+      width: 220px;
+      height: 320px;
+  }
+ 
+  }
+  @media (min-width: 1200px) {
+    .teamsection .card {
+        width: 250px;
+        height: 350px;
+    }
+   
+    }
 .teamsection .card .face{
   position: absolute;
   top: 0;
