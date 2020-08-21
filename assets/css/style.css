@@ -1674,7 +1674,7 @@ padding: 0px 20px 0px 20px;
       width: 250px;
       height: 370px;
   }
-  .giftcard .upper-content {
+  .giftcard .upper-content h1{
     font-size: 23px;
   }
   .giftcard .overlay-content{
@@ -1690,15 +1690,28 @@ padding: 0px 20px 0px 20px;
     height: 260px;
     font-size: 13px;
   }
+  #giftcard1 .upper-content h1{
+    font-size: 27px;
+  }
+  #giftcard1:hover .upper-content {
+    /* left: 0; */
+    transform: translateY(-60%);
+    }
+    #giftcard1:hover .upper-content h1{
+        transform: translateY(90%);
+    }
   #giftcard2:hover .upper-content {
     /* left: 0; */
-    transform: translateY(-55%);
+    transform: translateY(-53%);
     }
     #giftcard2:hover .upper-content h1{
         transform: translateY(120%);
     }
   }
   @media (max-width: 700px) {
+    .giftcard .upper-content h1{
+      font-size: 20px;
+    }
     #giftcard1{
       width: 300px;
       height: 350px;
@@ -1720,7 +1733,7 @@ padding: 0px 20px 0px 20px;
       }
       #giftcard2:hover .upper-content {
         /* left: 0; */
-        transform: translateY(-53%);
+        transform: translateY(-46%);
         }
         #giftcard2:hover .upper-content h1{
             transform: translateY(90%);
