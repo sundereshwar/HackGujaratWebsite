@@ -1681,7 +1681,7 @@ padding: 0px 20px 0px 20px;
   #giftcard1{
     padding: 30px;
     height: 260px;
-    font-size: 13px;
+    /* font-size: 13px; */
   }
   #giftcard2{
     padding: 30px;
