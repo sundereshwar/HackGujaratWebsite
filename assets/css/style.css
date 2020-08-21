@@ -1655,11 +1655,9 @@ padding: 0px 20px 0px 20px;
         transform: translateY(120%);
     }
   .giftcard .overlay-content p {
-  text-align: center;
-  font-size: 15px;
-  margin: 2rem;
-  letter-spacing: 1px;
-  line-height: 1.75rem;
+  
+  
+ margin: 10px;
   }
   .giftcard .overlay-content p span {
   display: block;
@@ -1671,8 +1669,8 @@ padding: 0px 20px 0px 20px;
 
   @media (max-width: 1024px) {
   .giftcard {
-      width: 250px;
-      height: 370px;
+      width: 265px;
+      height: 375px;
   }
   .giftcard .upper-content h1{
     font-size: 23px;
@@ -1708,7 +1706,13 @@ padding: 0px 20px 0px 20px;
         transform: translateY(120%);
     }
   }
+  @media (max-width:550px){
+    .giftcard{
+      width: 269px;
+    }
+  }
   @media (max-width: 700px) {
+    
     .giftcard .upper-content h1{
       font-size: 20px;
     }
