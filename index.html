@@ -368,7 +368,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#abouthere">About</a></li>
           <li><a href="#services">Speakers</a></li>
           <li><a href="#portfolio">Schedule</a></li>
           <li><a href="#mentor">Mentors</a></li>
@@ -414,7 +414,7 @@
            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
       
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">About the event</a><span><button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button></span>
+            <a href="#abouthere" class="btn-get-started scrollto">About the event</a><span><button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button></span>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" style="border-radius: 5px;" data-aos="fade-left" data-aos-delay="200">
@@ -487,13 +487,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       </div>
     </section>End Clients Section -->
-    <!-- <section id="timer">
-      <div class="overlay">
-        <center>
+    <section id="timer" >
+      <div class="">
+      <div id="abouthere" class="overlay" align="center">
+     
           <h1>We are coming...</h1><br>
-          <p id="demo"></p>
-          <pre>Days   Hours   Minutes   Seconds</pre>
-        </center>
+          <div class="timecount" >
+            <p id="days"></p>
+            <p id="hours"></p>
+            <p id="minutes"></p>
+            <p id="seconds"></p>
+          </div>
+         
+         
+      
         
      
 
@@ -517,9 +524,13 @@ document.addEventListener('DOMContentLoaded', function () {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
         // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML ="&nbsp;&nbsp;"+ days + "&nbsp;&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;&nbsp;    "
-        + minutes + "     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + seconds + "&nbsp;&nbsp;&nbsp;&nbsp;    ";
-          
+        // document.getElementById("demo").innerHTML ="&nbsp;&nbsp;"+ days + "&nbsp;&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;&nbsp;    "
+        // + minutes + "     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + seconds + "&nbsp;&nbsp;&nbsp;&nbsp;    ";
+
+         document.getElementById("days").innerHTML=days+"<br>Days";
+         document.getElementById("hours").innerHTML=hours+"<br>Hours"; 
+         document.getElementById("minutes").innerHTML=minutes+"<br>Minutes";
+         document.getElementById("seconds").innerHTML=seconds+"<br>Seconds";
         // If the count down is over, write some text 
         if (distance < 0) {
           clearInterval(x);
@@ -529,7 +540,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </script>
 
       </div>
-    </section> -->
+    </div>
+    </section>
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about" style="color: white;">
       <div class="container">

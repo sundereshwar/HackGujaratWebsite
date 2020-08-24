@@ -795,24 +795,24 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Timer
 --------------------------------------------------------------*/
+
 .modal h4{
   font-size: 1.3em;
 }
 #timer 
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url(../img/bg1234.jpg);
     background-size: cover;
-  
+    border-top: 4px solid #f17c1c;
     background-attachment: fixed;
+    margin-bottom: -50px;
 }
 #timer .overlay{
+  position: relative;
   padding: 30px 0px;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: auto;
+  height: 220px;
   margin: 0px;
 }
 #timer h1{
@@ -821,33 +821,43 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 #timer p{
-
-  font-size: 2em;
+ 
+  float: left;
+  margin: 0px 1em;
+  font-size: 1.5em;
   color: white;
+}
+#timer .timecount{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #timer pre{
 
   font-size: 1em;
   color: white;
 }
-@media (max-width:720px)
+@media (max-width:1031px)
 {
+  #timer{
+    height: 430px;
+  }
+  #timer .overlay{
+    height: 320px;
+  }
+  
   #timer h1{
   
     font-size: 2em;
     color: white;
   }
   #timer p{
-  
-    font-size: 1.5em;
-    color: white;
-  }
-  #timer pre{
-  
-    font-size: 0.8em;
+   float: none;
+    font-size: 1em;
     color: white;
   }
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1190,7 +1200,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/bg32.jpg) top center;
   background-size: cover;
   background-attachment: local;
-  padding-bottom: 30px;
+ 
 }
 
 #hero h1 {
@@ -1479,7 +1489,7 @@ padding: 0px 20px 0px 20px;
 #about{
  background: url(../img/bg1234.jpg) top center; 
   background-size: cover;
-  background-attachment: local;
+  background-attachment: fixed;
 }
 .about .content h3 {
   font-weight: 600;
@@ -2084,7 +2094,7 @@ padding: 0px 20px 0px 20px;
   height: 100%;
   
   /* background-color: #ffeac9; */
-  background: url(../img/bg21.jpg);
+  background: url(../img/bg21b.jpg);
   background-size: cover;
   color: #ffffff;
   display: flex;
