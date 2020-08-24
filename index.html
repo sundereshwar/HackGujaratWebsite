@@ -448,34 +448,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// // Set the date we're counting down to
-// var countDownDate = new Date("Sep 5, 2020 15:37:25").getTime();
-
-// // Update the count down every 1 second
-// var x = setInterval(function() {
-
-//   // Get today's date and time
-//   var now = new Date().getTime();
-
-//   // Find the distance between now and the count down date
-//   var distance = countDownDate - now;
-
-//   // Time calculations for days, hours, minutes and seconds
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//   // Display the result in the element with id="demo"
-//   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-//   + minutes + "m " + seconds + "s ";
-
-//   // If the count down is finished, write some text
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("demo").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
 </script>
   </section><!-- End Hero -->
 
@@ -515,7 +487,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
       </div>
     </section>End Clients Section -->
+    <!-- <section id="timer">
+      <div class="overlay">
+        <center>
+          <h1>We are coming...</h1><br>
+          <p id="demo"></p>
+          <pre>Days   Hours   Minutes   Seconds</pre>
+        </center>
+        
+     
 
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Sep 5, 2020 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML ="&nbsp;&nbsp;"+ days + "&nbsp;&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;&nbsp;    "
+        + minutes + "     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + seconds + "&nbsp;&nbsp;&nbsp;&nbsp;    ";
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+
+      </div>
+    </section> -->
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about" style="color: white;">
       <div class="container">
@@ -743,6 +757,56 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
           </center>
           </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <center>
+              <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="face front" style="background: url(assets/img/speakers/alongrinshpoon.jpg);background-size: cover;">
+                    <h2>Alon<br> Grinshpoon</h2>
+                   
+                </div>
+                <div class="face back">
+                  <!-- <h2>Team Lead</h2> -->
+                  <div class="overlay">
+                    <!-- <img src="assets/img/clients/aws.jpeg" width="90%" style="margin:10px 0px ;border-radius: 5px;"> -->
+                  <p style="padding-top: 50px;">Founder & CEO <br>at echoAR (Techstars '19)<span style="font-size:15px;"></span></p>
+                  <div class="sm" style="margin-top: 90px;">
+                    
+                  <a href="https://github.com/alon-grinshpoon" target="blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/alongrinshpoon/" target="blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://twitter.com/AlonGrinshpoon" target="blank"><i class="fa fa-twitter"></i></a>
+                  </div>
+                  <button type="button" class="modalbtn" style="margin-top: 0px;" data-toggle="modal" data-target="#alon">Read More</button>
+                  </div>
+                </div>
+            </div>
+          </center>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <center>
+              <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="face front" style="background: url(assets/img/speakers/d1.PNG);background-size: cover;">
+                    <h2>Dawood<br> Iddris</h2>
+                   
+                </div>
+                <div class="face back">
+                  <!-- <h2>Team Lead</h2> -->
+                  <div class="overlay">
+                    <!-- <img src="assets/img/clients/aws.jpeg" width="90%" style="margin:10px 0px ;border-radius: 5px;"> -->
+                  <p style="padding-top: 50px;">MVP | Gold Learn Ambassador | Software Developer<span style="font-size:15px;"></span></p>
+                  <div class="sm" style="margin-top: 70px;">
+                    
+                  <!-- <a href="https://github.com/roottusk/" target="blank"><i class="fab fa-github"></i></a> -->
+                  <a href="https://twitter.com/Dawoodiddris" target="blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://medium.com/@Dawoodiddris" target="blank"><i class="fa fa-medium"></i></a>
+                  </div>
+                  <button type="button" class="modalbtn" style="margin-top: 0px;" data-toggle="modal" data-target="#dawood">Read More</button>
+                  </div>
+                </div>
+            </div>
+          </center>
+          </div>
            
          </div>
        </div>
@@ -913,6 +977,74 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
                   Time : IST 7:00 PM onwards
                   <br>
                   Topic: “101s of Application Security”
+                </p>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+       <!-- 6. alon grinshpoon -->
+     
+       <div class="modal fade" id="alon" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background:url(assets/img/bg111.jpg);background-size: contain;">
+              <h4 class="modal-title" style="color: white;font-weight: bold;">Alon Grinshpoon <br>(Founder & CEO at echoAR (Techstars '19))</h4>
+              <button type="button" class="close" data-dismiss="modal" style="outline: none;color: white;opacity: 0.8;">&times;</button>
+             
+            </div>
+            <div class="modal-body" style="background: url(assets/img/bg32.jpg);background-size: cover;">
+             <div style="background:rgba(255,255,255,0.6);padding: 10px;margin: 0;">
+              <p align="justify">Alon is a big-believer in augmented and virtual reality (AR/VR) and is working on building the world's best 3D-first content management system (CMS) and delivery network (CDN) to help companies scale their AR/VR solutions.
+                <br><br>
+                Alon is a Java native-speaker with countless hours of programming in Java, Android, Unity, C#, C and Bash. Alon loves to create AR/VR apps, GUI and graphically design applications, open-source programs and API integration alongside his experience and passion for cloud and computer communication networks.
+                <br><br>
+                Alon received his MSc in Computer Science from Columbia University's School of Engineering and Applied Science specializing in computer graphics, virtual and augmented reality, and human-computer interaction. Alon wrote his thesis on an Augmented Reality Guidance System for Endovascular Surgery advised by Prof. Steven K. Feiner.
+                <br><br>
+                Alon received his BSc as a double major in Computer Science and Electrical and Electronic Engineering from Tel Aviv University specializing in software engineering, computer communication networks and cyber security.
+                <br><br>
+                During his studies, Alon served as a graduate researcher at the Computer Graphics and User Interfaces Laboratory of Columbia University. Alon also served as a research assistant and teaching assistant in the fields of computer networks and distributed cloud networks. 
+                <h5 style="font-size: 18px;"><span style="border-bottom: 1px solid black;">Event Details</span></h5>
+                <!-- <p>Date : 29th august 2020, Saturday
+                  <br>
+                  Time : IST 5:00 PM onwards
+                  <br> -->
+                  Topic: “How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less”
+                </p>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- 7. dawood idris -->
+     
+      <div class="modal fade" id="dawood" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background:url(assets/img/bg111.jpg);background-size: contain;">
+              <h4 class="modal-title" style="color: white;font-weight: bold;">Dawood Iddris <br>(MVP | Gold Learn Ambassador | Software Developer)</h4>
+              <button type="button" class="close" data-dismiss="modal" style="outline: none;color: white;opacity: 0.8;">&times;</button>
+             
+            </div>
+            <div class="modal-body" style="background: url(assets/img/bg32.jpg);background-size: cover;">
+             <div style="background:rgba(255,255,255,0.6);padding: 10px;margin: 0;">
+              <p align="justify">Software developer, CEO Techloud Inc, Ex-President Of UDS Computer Science, Microsoft Student Partner, Ingressive Campus and Regional Lead Ambassador.
+                <h5 style="font-size: 18px;"><span style="border-bottom: 1px solid black;">Event Details</span></h5>
+                <p>Date : 31st august 2020, Monday
+                  <br>
+                  Time : IST 6:00 PM onwards
+                  <br>
+                  Topic: “Realizing your Idea build faster with PowerApps”
                 </p>
             </div>
           </div>
@@ -1745,6 +1877,33 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
             </center>
              </div>
 
+             <div class="col-lg-4 col-md-6 col-sm-6">
+              <center>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="face front" style="background: url(assets/img/mentors/ishan.jpg);background-size: cover;">
+                      <h2>Ishan<br> Vohra</h2>
+                  </div>
+                  <div class="face back">
+                    <!-- <h2>Team Lead</h2> -->
+                    <div class="overlay">
+                      <!-- <img src="assets/img/clients/aws.jpeg" width="60%" style="margin:10px 0px ;border-radius: 5px;"> -->
+                    <p style="padding-top: 50px;">Founder and CEO,<br>The Indie Corp|<br> Microsoft Learn Student Ambassador<br><span style="font-size:15px;"></span></p>
+                    <div class="sm" style="margin-top: 40px;">
+                      
+                      <!-- <a href="https://twitter.com/PiyushJalan93" target="blank"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/piyush-jalan/" target="blank"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://github.com/piyushjalan02" target="blank"><i class="fa fa-github"></i></a> -->
+                      <a href="mailto:ishanvohra@studentambassadors.com" target="blank"><i class="fa fa-envelope"></i></a>
+                      
+                    </div>  
+                    <button type="button" class="modalbtn"  data-toggle="modal" data-target="#ishan">Read More</button>
+                    
+                    
+                  </div>
+                  </div>
+              </div>
+            </center>
+             </div>
 
           </div>
         </div>
@@ -1960,6 +2119,34 @@ I am a passionate and dedicated learner who loves creating solutions to real-lif
             
           </div>
         </div>
+
+          <!-- 9. Ishan Vohra -->
+              
+          <div class="modal fade" id="ishan" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background:url(assets/img/bg111.jpg);background-size: contain;">
+                  <h4 class="modal-title" style="color: white;font-weight: bold;">Ishan Vohra<br>(Founder and CEO,The Indie Corp| Microsoft Learn Student Ambassador)</h4>
+                  <button type="button" class="close" data-dismiss="modal" style="outline: none;color: white;opacity: 0.8;">&times;</button>
+                
+                </div>
+                <div class="modal-body" style="background: url(assets/img/bg32.jpg);background-size: cover;">
+                <div style="background:rgba(255,255,255,0.6);padding: 10px;">
+                  <p align="justify">
+                    Founder and CEO,The Indie Corp| Microsoft Learn Student Ambassador |2x International Award Winner | Game Development Mentor at IOSD | IncubateIND Fellow| SIH 2020 Winner
+
+                  </p>
+                </div>
+              </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        
+
 
         <!-- End mentor model -->
         <div class="text-center">
@@ -3291,44 +3478,7 @@ I am a passionate and dedicated learner who loves creating solutions to real-lif
       </div>
     </section><!-- End Contact Section -->
 
-    <!-- <section id="timer">
-      <div>
-              
-      <p id="demo"></p>
-
-      <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Sep 5, 2020 12:00:00").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-          
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-          
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-          
-        // If the count down is over, write some text 
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-</script>
-
-      </div>
-    </section> -->
+   
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
