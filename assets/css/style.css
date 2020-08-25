@@ -832,10 +832,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   transform: translateX(-50%);
 }
-#timer pre{
-
-  font-size: 1em;
-  color: white;
+#timer .clo{
+  transition: all 0.3s;
+  cursor: default;
+}
+#timer .clo:hover{
+  transform: scale(1.2);
 }
 @media (max-width:575px)
 {
