@@ -837,7 +837,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   color: white;
 }
-@media (max-width:1031px)
+@media (max-width:575px)
 {
   #timer{
     height: 430px;
