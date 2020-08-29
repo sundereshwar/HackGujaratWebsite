@@ -1238,13 +1238,13 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
         
       }
       else{
-         $('.id1')[window.i].click(window.i=window.i+1)
+      //    $('.id1')[window.i].click(window.i=window.i+1)
 
-      if(window.i>9)
-        {window.i=0}
-      if(window.i==9){
-        window.i=0
-      }
+      // if(window.i>9)
+      //   {window.i=0}
+      // if(window.i==9){
+      //   window.i=0
+      // }
 
         window.setInterval(function(){$('#next').toggleClass("next")},1000)
       }
@@ -1265,14 +1265,14 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     }
       else{
         window.setInterval(function(){$('#prev').toggleClass("prev")},1000)
-          window.i=window.i-1
-       $('.id1')[window.i].click()
+      //     window.i=window.i-1
+      //  $('.id1')[window.i].click()
 
-      if(window.i<=0)
-        {window.i=1}
-      if(window.i==9){
-        window.i=1
-      }
+      // if(window.i<=0)
+      //   {window.i=1}
+      // if(window.i==9){
+      //   window.i=1
+      // }
       }
        console.log("myfun1",window.i)
       }
@@ -1291,15 +1291,17 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     },10000)
      window.setInterval(function(){
       if($(window).width()<=800){
-        $('.next')[0].click()
+        $('#next')[0].click()
         
       }
-    },25000)
+    },12000)
       
-    // function myclick(a)
-    // {
-    //   window.i=a
-    // }
+    function myclick(a)
+    {
+      if($(window).width()<=800){
+      window.i=a
+    }
+    }
     
     // window.setInterval(ch,2000)
     </script>
@@ -1331,8 +1333,8 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     </div> <!-- .events-wrapper -->
       
     <ul style="list-style-type:none;" class="cd-timeline-navigation">
-      <li><a href="#0" onclick="myfun1()" id="prev" class="ccc" style="left:0" >Prev</a></li>
-      <li><a href="#0" id="next" onclick="myfun()" class="cc" style="right:0;">Next</a></li>
+      <li><a href="#0" onclick="myfun1()" id="prev" class="ccc" style="left:0;background: url(../img/back.svg) no-repeat 0 0;" >&laquo;</a></li>
+      <li><a href="#0" id="next" onclick="myfun()" class="cc" style="right:0;background: url(../img/right-arrow.svg) no-repeat 0 0;"> &raquo;</a></li>
     </ul> <!-- .cd-timeline-navigation -->
   </div> <!-- .timeline -->
 
