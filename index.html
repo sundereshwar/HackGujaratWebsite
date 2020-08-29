@@ -1253,6 +1253,7 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     }
     function myfun1()
     {
+      if($(window).width()>=800){
       window.i=window.i-1
        $('.id1')[window.i].click()
 
@@ -1261,8 +1262,17 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
       if(window.i==9){
         window.i=1
       }
+    }
       else{
         window.setInterval(function(){$('#prev').toggleClass("prev")},1000)
+          window.i=window.i-1
+       $('.id1')[window.i].click()
+
+      if(window.i<=0)
+        {window.i=1}
+      if(window.i==9){
+        window.i=1
+      }
       }
        console.log("myfun1",window.i)
       }
@@ -1286,10 +1296,10 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
       }
     },25000)
       
-    function myclick(a)
-    {
-      window.i=a;
-    }
+    // function myclick(a)
+    // {
+    //   window.i=a
+    // }
     
     // window.setInterval(ch,2000)
     </script>
@@ -1321,7 +1331,7 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     </div> <!-- .events-wrapper -->
       
     <ul style="list-style-type:none;" class="cd-timeline-navigation">
-      <li><a href="#0" onclick="myfun1()" id="prev" style="left:0" >Prev</a></li>
+      <li><a href="#0" onclick="myfun1()" id="prev" class="ccc" style="left:0" >Prev</a></li>
       <li><a href="#0" id="next" onclick="myfun()" class="cc" style="right:0;">Next</a></li>
     </ul> <!-- .cd-timeline-navigation -->
   </div> <!-- .timeline -->
