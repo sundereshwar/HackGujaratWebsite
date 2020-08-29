@@ -2030,6 +2030,15 @@ padding: 0px 20px 0px 20px;
   opacity: 1;
 }
 /*--------------------------------------------------------------
+# tracks
+--------------------------------------------------------------*/
+#tracks
+{
+  background: url(../img/bg321.jpg) top center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+/*--------------------------------------------------------------
 # prizes
 --------------------------------------------------------------*/
 
@@ -2230,6 +2239,11 @@ padding: 0px 20px 0px 20px;
 # Team
 --------------------------------------------------------------*/
 
+#team{
+  background: url(../img/bg321.jpg) top center;
+  background-size: contain;
+  background-attachment: fixed;
+}
 /*new*/
 .teamsection{
   width: 100%;
