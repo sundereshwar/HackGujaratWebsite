@@ -2240,9 +2240,9 @@ padding: 0px 20px 0px 20px;
 --------------------------------------------------------------*/
 
 #team{
-  background: url(../img/bg321.jpg) top center;
+  /* background: url(../img/bg321.jpg) top center;
   background-size: contain;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 /*new*/
 .teamsection{
