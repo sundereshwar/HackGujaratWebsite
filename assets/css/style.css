@@ -233,9 +233,12 @@ Main Components
   -o-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
 }
-.cd-timeline-navigation a.next {
+@media only screen and (min-width:480px) {
+  .cd-timeline-navigation a.next {
   right: 0;
 }
+}
+
 .no-touch .cd-timeline-navigation a:hover {
   border-color: #7b9d6f;
 }

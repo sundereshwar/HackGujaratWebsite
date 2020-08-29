@@ -1223,6 +1223,50 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     <!-- ======= Schedule Section ======= -->
     <script>
       
+    function myfun()
+    {
+
+      if($(window).width()>=800){
+
+        $('.id1')[window.i].click(window.i=window.i+1)
+
+      if(window.i>9)
+        {window.i=0}
+      if(window.i==9){
+        window.i=0
+      }
+        
+      }
+      else{
+         $('.id1')[window.i].click(window.i=window.i+1)
+
+      if(window.i>9)
+        {window.i=0}
+      if(window.i==9){
+        window.i=0
+      }
+
+        window.setInterval(function(){$('#next').toggleClass("next")},1000)
+      }
+            console.log("myfun",window.i)
+     
+    }
+    function myfun1()
+    {
+      window.i=window.i-1
+       $('.id1')[window.i].click()
+
+      if(window.i<=0)
+        {window.i=1}
+      if(window.i==9){
+        window.i=1
+      }
+      else{
+        window.setInterval(function(){$('#prev').toggleClass("prev")},1000)
+      }
+       console.log("myfun1",window.i)
+      }
+
     
      window.setInterval(function(){
 
@@ -1233,15 +1277,19 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
       if(window.i==9){
         window.i=0
       }
+       console.log("myfun",window.i)
     },10000)
      window.setInterval(function(){
       if($(window).width()<=800){
         $('.next')[0].click()
         
       }
-    },30000)
+    },25000)
       
-     
+    function myclick(a)
+    {
+      window.i=a;
+    }
     
     // window.setInterval(ch,2000)
     </script>
@@ -1256,15 +1304,15 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
       <div class="events">
 
         <ul style="list-style-type:none;">
-          <li><a class="id1" href="#0" data-date="29/08/2020" class="selected">29 Aug</a></li>
-          <li><a class="id1" href="#0" data-date="30/08/2020">30 Aug</a></li>
-            <li><a class="id1" href="#0" data-date="31/08/2020">31 Aug</a></li>
-          <li><a class="id1" href="#0" data-date="01/09/2020">1 Sep</a></li>
-          <li><a class="id1" href="#0" data-date="02/09/2020">2 Sep</a></li>
-          <li><a  class="id1"href="#0" data-date="03/09/2020">3 Sep</a></li>
-          <li><a  class="id1"href="#0" data-date="04/09/2020">4 Sep</a></li>
-          <li><a class="id1" href="#0" data-date="05/09/2020">5 Sep</a></li>
-          <li><a class="id1"href="#0" data-date="06/09/2020">6 Sep</a></li>
+          <li><a class="id1" onclick="myclick(1)" href="#0" data-date="29/08/2020" class="selected">29 Aug</a></li>
+          <li><a class="id1"  onclick="myclick(2)" href="#0" data-date="30/08/2020">30 Aug</a></li>
+            <li><a class="id1"  onclick="myclick(3)" href="#0" data-date="31/08/2020">31 Aug</a></li>
+          <li><a class="id1"  onclick="myclick(4)" href="#0" data-date="01/09/2020">1 Sep</a></li>
+          <li><a class="id1"   onclick="myclick(5)" href="#0" data-date="02/09/2020">2 Sep</a></li>
+          <li><a  class="id1"  onclick="myclick(6)"href="#0" data-date="03/09/2020">3 Sep</a></li>
+          <li><a  class="id1"  onclick="myclick(7)"href="#0" data-date="04/09/2020">4 Sep</a></li>
+          <li><a class="id1"  onclick="myclick(8)" href="#0" data-date="05/09/2020">5 Sep</a></li>
+          <li><a class="id1"  onclick="myclick(9)"href="#0" data-date="06/09/2020">6 Sep</a></li>
           
         </ul>
 
@@ -1273,8 +1321,8 @@ He has also spoken at several events and workshops.He has developed a CTF Platfo
     </div> <!-- .events-wrapper -->
       
     <ul style="list-style-type:none;" class="cd-timeline-navigation">
-      <li><a href="#0" class="prev inactive">Prev</a></li>
-      <li><a href="#0" id="next" class="next">Next</a></li>
+      <li><a href="#0" onclick="myfun1()" id="prev" style="left:0" >Prev</a></li>
+      <li><a href="#0" id="next" onclick="myfun()" class="cc" style="right:0;">Next</a></li>
     </ul> <!-- .cd-timeline-navigation -->
   </div> <!-- .timeline -->
 
