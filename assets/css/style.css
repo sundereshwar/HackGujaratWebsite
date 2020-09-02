@@ -925,9 +925,29 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   z-index: 997;
   transition: all 0.5s;
-  padding: 22px 0;
+  padding: 17px 0;
 }
-
+.reg-end{
+  background: #f17c1c;
+  width: 100%;
+  height: 25px;
+  display: block;
+  color: white;
+  padding:2px;
+  font-size: 13px;
+}
+.cls{
+  transition: all 0.4s;
+}
+.cls:hover{
+  transform: rotate(90deg);
+}
+@media (max-width:286px)
+{
+  .reg-end{
+    font-size: 8px;
+  }
+}
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
@@ -2086,6 +2106,7 @@ padding: 0px 20px 0px 20px;
   .giftcard .overlay-content{
   width: 100%;
   height: 80%;
+  font-size: 14.3px;
   /* background-color: #ffffff; */
   background: url(../img/bg32.jpg);
   background-size: cover;
