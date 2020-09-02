@@ -2074,6 +2074,55 @@ padding: 0px 20px 0px 20px;
   opacity: 1;
 }
 /*--------------------------------------------------------------
+# themes
+--------------------------------------------------------------*/
+.themess{
+  margin: 10px 0px;
+}
+.themecard{
+  cursor: default;
+  height: 200px;
+  background: #f17c1c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.theme-overlay{
+  position: absolute;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.4s;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.theme-overlay p{
+  transition: all 0.2s;
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.themecard:hover .theme-overlay{
+  background: rgba(0, 0, 0, 0.6);
+}
+.themecard:hover .theme-overlay p{
+  animation: theme-text 1s linear infinite;
+  
+}
+@keyframes theme-text{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+}
+/*--------------------------------------------------------------
 # tracks
 --------------------------------------------------------------*/
 #tracks
