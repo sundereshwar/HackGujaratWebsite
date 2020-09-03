@@ -2080,15 +2080,22 @@ padding: 0px 20px 0px 20px;
   margin: 10px 0px;
 }
 .themecard{
+  position: relative;
   cursor: default;
   height: 200px;
   background: #f17c1c;
   border-radius: 10px;
   overflow: hidden;
 }
+@media (max-width:575px)
+{
+  .themecard{
+    width: 70%;
+  }
+}
 .theme-overlay{
   position: absolute;
-  width: 90%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.8);
   transition: all 0.4s;
   height: 100%;
