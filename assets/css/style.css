@@ -2086,6 +2086,7 @@ padding: 0px 20px 0px 20px;
   background: #f17c1c;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
 }
 @media (max-width:575px)
 {
@@ -2116,8 +2117,10 @@ padding: 0px 20px 0px 20px;
 }
 .themecard:hover .theme-overlay{
   background: rgba(0, 0, 0, 0.6);
+  /* animation: theme-color 1s linear infinite; */
 }
 .themecard:hover .theme-overlay p{
+ 
   animation: theme-text 1s linear infinite;
   
 }
@@ -2127,6 +2130,14 @@ padding: 0px 20px 0px 20px;
   }
   50%{
     transform: translateY(-5px);
+  }
+}
+@keyframes theme-color{
+  0%{
+    background: rgba(0, 0, 0, 0.8);
+  }
+  50%{
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 /*--------------------------------------------------------------
