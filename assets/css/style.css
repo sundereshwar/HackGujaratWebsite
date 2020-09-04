@@ -3296,7 +3296,7 @@ padding: 0px 20px 0px 20px;
     float: left;
 }
 .main-timeline .timeline-content{
-    background: #ff680a;
+    background: #f17c1c;
     padding: 30px 85px 30px 30px;
     border-radius: 0 40px;
     display: block;
@@ -3333,7 +3333,7 @@ padding: 0px 20px 0px 20px;
     top: 50%;
 }
 .main-timeline .title{
-    color: #f72727;
+    color: #f17c1c;
     font-size: 22px;
     font-weight: 800;
     text-transform: capitalize;
@@ -3367,12 +3367,12 @@ padding: 0px 20px 0px 20px;
     right: auto;
     left: -16px;
 }
-.main-timeline .timeline:nth-child(4n+2) .timeline-content{ background-color: #ff680a; }
-.main-timeline .timeline:nth-child(4n+2) .title{ color: #ff680a; }
-.main-timeline .timeline:nth-child(4n+3) .timeline-content{ background-color: #ff680a; }
-.main-timeline .timeline:nth-child(4n+3) .title{ color: #ff680a; }
-.main-timeline .timeline:nth-child(4n+4) .timeline-content{ background-color: #ff680a; }
-.main-timeline .timeline:nth-child(4n+4) .title{ color: #ff680a; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-content{ background-color: #f17c1c; }
+.main-timeline .timeline:nth-child(4n+2) .title{ color: #f17c1c; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-content{ background-color: #f17c1c; }
+.main-timeline .timeline:nth-child(4n+3) .title{ color: #f17c1c; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content{ background-color: #f17c1c; }
+.main-timeline .timeline:nth-child(4n+4) .title{ color:#f17c1c; }
 @media screen and (max-width:767px){
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
