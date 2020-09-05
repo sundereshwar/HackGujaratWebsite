@@ -450,7 +450,10 @@
     </div>
     <div class="reg-end" id="reg-end">
      
-    <center><span>Registration ends on 3rd September,2020</span> <span class="cls" style="float: right;"><button style="background: none;color: white;outline: none;" class="fa fa-close" onclick="closeend()" ></button></span></center>
+    <center>
+      <span>Hackathon ends in </span><span id="main_time"></span>
+       <!-- <span class="cls" style="float: right;"><button style="background: none;color: white;outline: none;" class="fa fa-close" onclick="closeend()" ></button></span> -->
+      </center>
     <script>
       function closeend(){
         document.getElementById("reg-end").style.display="none";
@@ -549,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="">
       <div id="abouthere" class="overlay" align="center">
      
-          <h1>We are coming...</h1><br>
+          <h1>Hackathon ends in..</h1><br>
           <div class="container">
             <div class="row">
               <div class="clo col-lg-2 col-md-2 col-xs-0 col-sm-0">
@@ -586,7 +589,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Sep 5, 2020 12:00:00").getTime();
+      var countDownDate = new Date("Sep 6, 2020 06:00:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -611,6 +614,8 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById("hours").innerHTML=hours+"<br>Hours"; 
          document.getElementById("minutes").innerHTML=minutes+"<br>Minutes";
          document.getElementById("seconds").innerHTML=seconds+"<br>Seconds";
+
+         document.getElementById("main_time").innerHTML=hours+" h "+minutes+" m "+seconds+" s";
         // If the count down is over, write some text 
         if (distance < 0) {
           clearInterval(x);
