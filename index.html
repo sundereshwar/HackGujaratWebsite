@@ -451,7 +451,7 @@
     <div class="reg-end" id="reg-end">
      
     <center>
-      <span>Hackathon ends in </span><span id="main_time"></span>
+      <span>Hackathon has ended </span><span id="main_time"></span>
        <!-- <span class="cls" style="float: right;"><button style="background: none;color: white;outline: none;" class="fa fa-close" onclick="closeend()" ></button></span> -->
       </center>
     <script>
@@ -552,8 +552,8 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="">
       <div id="abouthere" class="overlay" align="center">
      
-          <h1>Hackathon ends in..</h1><br>
-          <div class="container">
+          <h1>Hackathon has ended <span id="end_time"></span></h1><br>
+          <!-- <div class="container">
             <div class="row">
               <div class="clo col-lg-2 col-md-2 col-xs-0 col-sm-0">
               </div>
@@ -573,7 +573,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
 
             </div>
-          </div>
+          </div> -->
 
           <!-- <div class="timecount">
             <p id="days"></p>
@@ -610,12 +610,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // document.getElementById("demo").innerHTML ="&nbsp;&nbsp;"+ days + "&nbsp;&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;&nbsp;    "
         // + minutes + "     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + seconds + "&nbsp;&nbsp;&nbsp;&nbsp;    ";
 
-         document.getElementById("days").innerHTML=days+"<br>Days";
-         document.getElementById("hours").innerHTML=hours+"<br>Hours"; 
-         document.getElementById("minutes").innerHTML=minutes+"<br>Minutes";
-         document.getElementById("seconds").innerHTML=seconds+"<br>Seconds";
-
-         document.getElementById("main_time").innerHTML=days+" d : "+hours+" h : "+minutes+" m : "+seconds+" s";
+        //  document.getElementById("days").innerHTML=days+"<br>Days";
+        //  document.getElementById("hours").innerHTML=hours+"<br>Hours"; 
+        //  document.getElementById("minutes").innerHTML=minutes+"<br>Minutes";
+        //  document.getElementById("seconds").innerHTML=seconds+"<br>Seconds";
+         document.getElementById("end_time").innerHTML=(days*(-1))+" days before.";
+         document.getElementById("main_time").innerHTML=(days*(-1))+" days before.";
         // If the count down is over, write some text 
         if (distance < 0) {
           clearInterval(x);
