@@ -3426,3 +3426,76 @@ border-right: 1px solid #ffffff;
 #main-menu li:last-child {
 border-right: none
 }
+#testimonials {
+  padding: 60px 0;
+}
+
+
+#testimonials .owl-nav, #testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#testimonials .owl-dot.active {
+  background-color: #f17c1c;
+}
+.map{
+  
+margin: 80px auto 40px;
+}
+p.help-block,
+p.help-block ul{
+    float: left; 
+    margin: 0;
+    padding: 0;
+}
+p.help-block li {
+    float: left; 
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style:none;
+    color:red;
+}
+ 
+
+ .padding {
+     padding: 1rem
+ }
+
+.card:hover{
+  background: #f17c1c;
+  color:white;
+}
+ .card {
+     position: relative;
+     display: flex;
+     width: 350px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 11px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+ }
+
+ .card .card-body {
+     padding: 1rem 1rem
+ }
+
+ .card-body {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
