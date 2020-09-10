@@ -186,6 +186,7 @@
       $('.venobox').venobox();
     });
   });
+  
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
