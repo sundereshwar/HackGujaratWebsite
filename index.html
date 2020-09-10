@@ -423,7 +423,7 @@
           <li><a href="#pricing">Sponsors</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#tracks">Tracks/Themes</a></li>
-           <li><a href="#testimonials">Testimonials</a></li>
+           <li><a href="#testim">Testimonials</a></li>
           <li><a href="#faq">FAQ</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
@@ -4033,13 +4033,178 @@ I am a passionate and dedicated learner who loves creating solutions to real-lif
 
       </div>
     </section>
-      <section id="testimonials" class="wow fadeInUp">
+
+    <!-- testimo start -->
+      <section id="testim" class="testim wow fadeInUp">
       <div class="container">
         <div class="section-title">
           <h2>Testimonials</h2>
           <h4 style="text-align:center;font-weight: bold;">What People Think Of Us</h4>
         </div>
-        <div class="owl-carousel testimonials-carousel">
+
+        <div class="wrap">
+
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+         
+          <div id="testim-content" class="cont">
+              
+              <div class="active">
+                  <div class="img"><img src="assets/img/testim/shashi.jpg" width="100%" alt=""></div>
+                  <h2>Shashidhar Reddy Javaji</h2>
+                  <p>As a mentor I learn from them, I taught them, overall I am inspired by the people and the ideas they have baught to this hackathon. Everyone has taken it has a challenge and built amazing and useful things in that less time which is so amazing.</p>                    
+              </div>
+
+              <div>
+                  <div class="img"><img src="assets/img/testim/yash.jpeg" alt=""></div>
+                  <h2>Yash Patel</h2>
+                  <p>Hack-Gujarat was a complete package of tremendous teaching, learning, networking and meeting new people and having lots of fun. I, as a mentor, was excited to look at the projects which participants built. I was very happy to see all of the people putting so much efforts right from the organizing team to all the participants. Some projects were very unique and helpful for the society for solving real life problems. While helping a lot of the participants about their doubts, I also learnt many new things and experimented it with the participants. I am happy to see such a growing community like Hack-Gujarat organizing such wonderful events. Hope to see all the people again in the next great event :)</p>                    
+              </div>
+
+              <!-- <div>
+                  <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
+                  <h2>Lorem Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+              </div>
+
+              <div>
+                  <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+                  <h2>Lorem De Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+              </div>
+
+              <div>
+                  <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
+                  <h2>Ms. Lorem R. Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+              </div> -->
+
+          </div>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <!-- <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li> -->
+        </ul>
+
+      </div>
+
+      <script>
+        'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+  document.getElementById("preload").style.display = "none";
+  window.i=1;
+      window.count=1;
+      $('#myModal').modal('show');
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+      </script>
+        <!-- <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
            <div class="card" id="card">
@@ -4097,7 +4262,7 @@ I am a passionate and dedicated learner who loves creating solutions to real-lif
           </div>
 
 
-        </div>
+        </div> -->
 
       </div>
     </section>
