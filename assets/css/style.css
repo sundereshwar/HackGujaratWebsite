@@ -4119,3 +4119,39 @@ p.help-block li {
      flex: 1 1 auto;
      padding: 1.25rem
  } */
+ 
+.left-schedule{
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 0px;
+  background: rgba(255, 255, 255,0.7);
+  /* border-bottom:4px solid #f17c1c; */
+  border-left: 5px solid #f17c1c;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border 0.2s all 0.6s;
+}
+.right-schedule{
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 0px;
+  background: rgba(255, 255, 255,0.7);
+  /* border-bottom:4px solid #f17c1c; */
+  border-right: 4px solid #f17c1c;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: border 0.2s all 0.6s;
+}
+.left-schedule:hover{
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  
+}
+.right-schedule:hover{
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+ 
+}
+.left-schedule .title{
+  color: #f17c1c;
+}
+
+.right-schedule .title{
+  color: #f17c1c;
+}
