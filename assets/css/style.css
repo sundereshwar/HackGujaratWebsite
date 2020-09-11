@@ -1007,7 +1007,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: #555555;
-  padding: 8px 0 12px 25px;
+  padding: 8px 0 12px 20px;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -3498,4 +3498,158 @@ p.help-block li {
  .card-body {
      flex: 1 1 auto;
      padding: 1.25rem
- }
+ }.bt {
+  background-color:transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size:20px;
+  text-transform: uppercase;
+  border-radius: 0px; 
+}
+.bt:hover {
+  background-color:transparent;
+  border-color: #d6962c;
+  color: #d6962c;
+  border-radius: 20px;
+}
+
+
+    @media only screen and (min-width: 400px) {
+  
+    .demo_box{
+      margin:5%;
+     text-align: center;
+    }
+  
+}
+  @media only screen and (min-width: 992px) {
+  .demo_box{
+    margin: 3%;
+  }
+    
+}
+
+    @media only screen and (min-width: 400px) {
+  
+    .img_size{
+     width:290px;
+     height:300px;
+    }
+  
+}
+  @media only screen and (min-width: 992px) {
+  .img_size{
+  width:400px;
+  height:400px;
+  }
+    
+}
+
+
+.single_portfolio_text{
+  display:inline-block;
+  padding:0;
+  position:relative;
+  overflow:hidden;
+}
+.single_portfolio_text img{
+  width:100%;
+}
+
+.single_portfolio_text:hover .portfolio_images_overlay{
+  top:5%;
+  left: 5%;
+}
+
+.portfolio_images_overlay{
+  width: 90%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 0 auto;
+  top: -100%;
+  left: 5%;
+  position: absolute;
+  transition:.6s;
+  
+}
+.portfolio_images_overlay h6{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  border: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.portfolio_images_overlay .product_price{
+  font-size: 35px;
+  color: #fff;
+  font-weight:800;
+  line-height:30px;
+}
+.portfolio_images_overlay .product_price i{
+    margin-right: -10px;
+}
+.zoom{
+  width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    border-radius: 50%;
+
+  background: #FF512F;
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+  background: linear-gradient(to right, #F09819, #FF512F);
+    box-shadow:0px 0px 0px 10px rgba(0,0,0,0.5);
+  opacity:0.9;
+}
+.zoom:before {
+  content: "\f00e";
+    font-family: FontAwesome;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 70px;
+    padding-right: 20px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.zoom-hover:hover .zoom-inner {
+  width: 125%;
+  height: 125%;
+}
+.con-st{
+  column-count: 4;
+ 
+ 
+}
+
+.zoom-hover{
+  margin-bottom: 2em;
+  width:100%;
+  border-radius: 13px;
+ 
+ transition: transform 0.3s ease-in-out;
+}
+.zoom-hover:hover{
+  transform:  scale(  1.2);
+}
+@media(max-width:800px)
+{
+  .con-st{
+    column-count:   3;
+  }
+}
+@media(max-width:400px)
+{
+  .con-st{
+    column-count:   1;
+  }
+}
+@media(max-width:600px){
+  .con-st{
+    column-count:2;
+  }
+}
