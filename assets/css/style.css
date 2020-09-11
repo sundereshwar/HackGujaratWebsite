@@ -4057,12 +4057,16 @@ border-right: none
 .zoom-hover{
   margin-bottom: 2em;
   width:100%;
-  border-radius: 13px;
- 
- transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+
+transition: transform .5s, filter 1.5s ease-in-out;
+
 }
 .zoom-hover:hover{
-  transform:  scale(  1.2);
+
+  transform: scale(1.1);
+
+  
 }
 @media(max-width:800px)
 {
