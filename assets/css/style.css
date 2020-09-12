@@ -2193,7 +2193,7 @@ padding: 0px 20px 0px 20px;
  
   position: absolute;
   z-index: 1;
-  padding: 10px 0px;
+  padding: 10px 0px 0px 20px;
   transition: transform 0.4s, box-shadow 0.6s;
   top: 100%;
   left: 0%;
